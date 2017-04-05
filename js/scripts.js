@@ -6,25 +6,41 @@ var randomNumber = function(){
 }
 
 
-$(function(){
-  var runningTotal = 0;
-  $("#form-one").submit(function(event){
-    event.preventDefault();
 
-    var userTurn = 0;
-    var userTurn = randomNumber();
+$(function() {
 
-    runningTotal += userTurn;
-    if (userTurn === 1)
-    {
-      runningTotal = 0;
-      alert("Your turn is over you greedy pig!")
-    }
-    $("#userTurn").text(userTurn);
-    $("#runningTotal").text(runningTotal);
+var runningTotal = 0;
+$("#form-one").submit(function(event){
+  event.preventDefault();
 
-    });
+  // var userTurn = 0;
+  var userTurn = randomNumber();
+
+  runningTotal += userTurn;
+  if (userTurn === 1)
+  {
+    runningTotal = 0;
+    alert("Your turn is over you greedy pig!")
+  }
+  $("#userTurn").text(userTurn);
+  $("#runningTotal").text(runningTotal);
+
+var updateTotal = runningTotal;
+console.log(updateTotal);
+$("#updateTotal").click(function() {
+  $("#total").text(updateTotal);
+    // var total = (updateTotal += runningTotal);
+    console.log(total);
   });
+});
+
+
+
+
+  });
+
+
+
 
 
 
