@@ -25,19 +25,23 @@ $("#form-one").submit(function(event){
   $("#userTurn").text(userTurn);
   $("#runningTotal").text(runningTotal);
 
-var updateTotal = runningTotal;
-console.log(updateTotal);
+// var updateTotal = runningTotal;
+// console.log(updateTotal);
+  var total = (heldTotal += runningTotal);
+  var heldTotal = [runningTotal];
 $("#updateTotal").click(function() {
-  $("#total").text(updateTotal);
-    // var total = (updateTotal += runningTotal);
-    console.log(total);
+  var streak = [runningTotal];
+  console.log(streak);
+  $("#runningTotal").text(runningTotal - runningTotal);
+    heldTotal.toString();
+  console.log(heldTotal.toString());
+
+  // var heldTotal += runningTotal;
+  $("#total").text(heldTotal);
+    var total = (updateTotal += runningTotal);
   });
 });
-
-
-
-
-  });
+});
 
 
 
