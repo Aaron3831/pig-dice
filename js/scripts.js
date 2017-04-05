@@ -11,6 +11,14 @@ $(function(){
     event.preventDefault();
 
     var userTurn = randomNumber();
+    if (userTurn === 1)
+    {
+      alert("Your turn is over you greedy pig!")
+    }
     console.log(userTurn)
+
+    // var turnTotal += 0 + userTurn;
+
+
   });
 })
