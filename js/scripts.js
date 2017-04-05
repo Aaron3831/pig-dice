@@ -7,18 +7,29 @@ var randomNumber = function(){
 
 
 $(function(){
+  var runningTotal = 0;
   $("#form-one").submit(function(event){
     event.preventDefault();
 
+    var userTurn = 0;
     var userTurn = randomNumber();
+
+    runningTotal += userTurn;
     if (userTurn === 1)
     {
+      runningTotal = 0;
       alert("Your turn is over you greedy pig!")
     }
-    console.log(userTurn)
+    $("#userTurn").text(userTurn);
+    $("#runningTotal").text(runningTotal);
 
-    // var turnTotal += 0 + userTurn;
-
-
+    });
   });
-})
+
+
+
+
+  // // var add = function(userTurn, runningTotal) {
+  // //   return userTurn += runningTotal;
+  // //   console.log(add)
+  // };
