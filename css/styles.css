@@ -5,3 +5,9 @@
 .floatright {
   float: right;
 }
+
+.col-md-2 {
+  margin-left: auto;
+  margin-right: auto;
+  color: #7294c9;
+}

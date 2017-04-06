@@ -15,35 +15,33 @@
       <div class="row">
         <div class="column-md-4 floatleft">
           <form id="playerOne" class="form-group">
+            <button type="submit" id="playerOneButton">Ready</button>
             <p id="playeroneshow">
             </p>
-            <button type="button" id="playerOneButton">Ready</button>
-          <button id="roll1" type="submit" name="roll" class="btn btn-success">Roll the dice!</button>
-          <span class="btn btn-danger" id="updateTotal1">Hold</span>
-          </form>
-          <ul id="playerOneRoll">
-          </ul>
-          <ul id="playerOneStreak">
-          </ul>
-          <ul id="playerOneBank">
-          </ul>
+          <button id="roll1" type="click" name="roll" class="btn btn-success">Roll the dice!</button>
+          <p id="playerOneStreak">
+          </p>
+          <button class="btn btn-danger" id="updateTotal1">Hold</button>
+          <p id="playerOneBank">
+          </p>
+        </form>
         </div>
-      <ul id="currentRoll">
-      </ul>
-        <div class="column-md-4 floatright">
-          <form id="playerTwo" class="form-group">
-            <p id="playertwoshow">
-            </p>
-            <button type="button" id="playerTwoButton">Ready</button>
-          <button id="roll2" type="submit" name="roll"class="btn btn-success">Roll the dice!</button>
-          <span class="btn btn-danger" id="updateTotal2">Hold</span>
-          </form>
-          <ul id="playerTwoRoll">
-          </ul>
-          <ul id="playerTwoStreak">
-          </ul>
-          <ul id="playerTwoBank">
-          </ul>
+      <div class="col-md-2">
+        <p id="currentRoll">
+        </p>
+      </div>
+      <div class="column-md-4 floatright">
+        <form id="playerTwo" class="form-group">
+          <button type="submit" id="playerTwoButton">Ready</button>
+          <p id="playertwoshow">
+          </p>
+        <button id="roll2" type="click" name="roll"class="btn btn-success">Roll the dice!</button>
+        <p id="playerTwoStreak">
+        </p>
+        <button class="btn btn-danger" id="updateTotal2">Hold</button>
+        <p id="playerTwoBank">
+        </p>
+        </form>
         </div>
       </div>
     </div>
