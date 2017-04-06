@@ -1,3 +1,4 @@
+
 //Business logic
 
 function Score (player, streak, bank) {
