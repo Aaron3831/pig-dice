@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/scripts2.js"></script>
+    <title>PIG DICE</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Lets play pig dice!</h1>
+      </div>
+      <div class="row">
+        <div class="column-md-4 floatleft">
+          <form id="playerOne" class="form-group">
+            <button type="submit" id="playerOneButton">Ready</button>
+            <p id="playeroneshow">
+            </p>
+          <button id="roll1" type="click" name="roll" class="btn btn-success">Roll the dice!</button>
+          <p id="playerOneStreak">
+          </p>
+          <button class="btn btn-danger" id="updateTotal1">Hold</button>
+          <p id="playerOneBank">
+          </p>
+        </form>
+        </div>
+        <div class="column-md-4 floatright">
+        <form id="playerTwo" class="form-group">
+          <button type="submit" id="playerTwoButton">Ready</button>
+          <p id="playertwoshow">
+          </p>
+        <button id="roll2" type="click" name="roll"class="btn btn-success">Roll the dice!</button>
+        <p id="playerTwoStreak">
+        </p>
+        <button class="btn btn-danger" id="updateTotal2">Hold</button>
+        <p id="playerTwoBank">
+        </p>
+        </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -7,6 +7,8 @@ function Score (player, streak, bank) {
   this.bank = bank;
 }
 
+
+
 Score.prototype.streaking = function() {
   var rNumber = Math.floor((Math.random() * 6) + 1);
   $("#currentRoll").text(rNumber);
